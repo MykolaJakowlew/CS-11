@@ -1,0 +1,119 @@
+body {
+    margin: 0
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    min-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+.container_1 {
+    width: 100%;
+    height: 700px;
+    background-image:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('./imgs/con-1-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.container_1>.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container_1>.container>.title {
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container_1 .counters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin: 25px 0;
+}
+
+.items>div {
+    display: flex;
+}
+
+.items .count {
+    color: #ff5a5a;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.items .title {
+    font-size: 2em;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    margin-left: 7.5px;
+}
+
+.items .description {
+    font-size: 1em;
+}
+
+.container_1>.container>div:last-child {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.container_3 {
+    background-color: #293331;
+    width: 100%;
+    height: 700px;
+}
+.container_3 .container {
+    display: flex;
+}
+
+.container_3 .container>div {
+    width: 50%;
+    height: 100%;
+}
+
+.container_3 .right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container_3 img {
+    width: 75%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: relative;
+    z-index: 16;
+}
+
+.right-section>div:first-child {
+    width: 45%;
+    aspect-ratio: 1/1;
+    background-color: #00ac92;
+    position: absolute;
+    z-index: 5;
+    top: 10%;
+    right: 5%;
+}
+
+.right-section>div:last-child {
+    width: 45%;
+    aspect-ratio: 1/1;
+    background-color: #ff5a5a;
+    position: absolute;
+    z-index: 5;
+    bottom: 10%;
+    left: 5%;
+}
